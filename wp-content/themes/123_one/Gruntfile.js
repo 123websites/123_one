@@ -22,14 +22,19 @@ module.exports = function(grunt) {
         \
         ',
       dist: {
-        src: ['js_vendor/jquery-1.12.4.min.js', 'js/**/*.js'],
+        src: ['js_vendor/jquery-1.12.4.min.js', 'js/**/main.js'],
         dest: 'build/js/build.js',
       },
+      exec: {
+        src: ['js/exec.js'],
+        dest: 'build/js/exec.js',
+      }
     },
     uglify : {
       build : {
         files: {
-          'build/js/build.js' : ['build/js/build.js']
+          'build/js/build.js' : ['build/js/build.js'], 
+          'build/js/exec.js' : ['build/js/exec.js']
         }
       }
     },

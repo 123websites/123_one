@@ -1746,7 +1746,9 @@ function acf_prepare_field_for_import( $field ) {
 		'_prepare',
 		'_valid',
 	));
-	
+	if(!isset($field['type'])){
+		error_log(print_r($field, true));
+	}
 	
 	// filter for 3rd party customization
 	$field = apply_filters( "acf/prepare_field_for_import", $field );
