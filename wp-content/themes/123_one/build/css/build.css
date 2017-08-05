@@ -101,12 +101,27 @@
   src: url("../../library/fonts/GothamHTF-XLightItalic.eot?#iefix") format("embedded-opentype"), url("../../library/fonts/GothamHTF-XLightItalic.woff") format("woff"), url("../../library/fonts/GothamHTF-XLightItalic.ttf") format("truetype");
   font-weight: 200;
   font-style: italic; }
+@media only screen {
+  .global-contact-contact-header {
+    letter-spacing: 2px; }
+
+  section:not(.home-hero):not(#coupons):not(#blog).hero {
+    height: 250px; }
+
+  section:not(.home-hero):not(#coupons):not(#blog) .hero-text {
+    top: calc(50% + 10px); }
+
+  section:not(.home-hero):not(#coupons):not(#blog) .hero-text-header {
+    color: white; } }
+@media only screen and (min-width: 641px) {
+  section:not(.home-hero):not(#coupons):not(#blog).hero {
+    height: 400px; } }
 @media only screen and (min-width: 1025px) {
   section:not(.home-hero):not(#coupons):not(#blog).hero {
     height: 500px; }
 
-  section:not(.home-hero):not(#coupons):not(#blog) .hero-text-header {
-    color: white; } }
+  section:not(.home-hero):not(#coupons):not(#blog) .hero-text {
+    top: calc(50% + 30px); } }
 @media only screen {
   .company-employees-grid-item {
     max-width: 320px;
@@ -275,7 +290,7 @@
 
   .services-services-grid-item-header {
     background-color: #32A2AE;
-    padding: 5px 10px;
+    padding: 20px 10px;
     font-size: 2rem;
     font-family: "Gotham", "Helvetica", sans-serif; }
 
@@ -369,5 +384,38 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); } }
+@media only screen {
+  .menu-menu-grid-category-grid-item-imagecontainer {
+    height: auto; }
+
+  .menu-menu-grid-category-grid-item-textcontainer-price {
+    font-size: 3.6rem; }
+
+  .menu-menu-grid-category-grid-item-textcontainer-header {
+    line-height: 1.5; } }
+@media only screen {
+  .blog-blog-pagination {
+    text-align: center; }
+    .blog-blog-pagination * {
+      font-size: 1.6rem; } }
+@media only screen {
+  .single-hero-header {
+    width: 100%;
+    text-align: center; }
+
+  .single-single-date {
+    font-size: 1.4rem; }
+
+  .single-single {
+    padding: 40px 20px; } }
+@media only screen and (min-width: 641px) {
+  .single-single-date {
+    font-size: 1.8rem; } }
+@media only screen and (min-width: 1025px) {
+  .single-hero-header {
+    top: calc(50% + 30px); } }
+@media only screen {
+  .testimonials-testimonials-grid-item-quotemark {
+    display: none; } }
 
 /*# sourceMappingURL=build.css.map */

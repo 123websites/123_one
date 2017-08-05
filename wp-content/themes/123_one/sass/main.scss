@@ -1,21 +1,42 @@
 @import 'mixins', 'fonts', 'vars';
 
 @media only screen {
-
-}
-
-@media only screen and (min-width: $medium){
-
-}
-
-@media only screen and (min-width: $large){
+	.global-contact-contact-header{
+		letter-spacing: 2px;
+	}
 	section:not(.home-hero):not(#coupons):not(#blog).hero{
-		height: 500px;
+		height: 250px;
+	}
+	section:not(.home-hero):not(#coupons):not(#blog) .hero-text{
+		top: calc(50% + 10px);
 	}
 	section:not(.home-hero):not(#coupons):not(#blog) .hero-text-header{
 		color: white;
 	}
 }
 
+@media only screen and (min-width: $medium){
+	section:not(.home-hero):not(#coupons):not(#blog).hero{
+		height: 400px;
+	}
+}
+
+@media only screen and (min-width: $large){
+	section:not(.home-hero):not(#coupons):not(#blog).hero{
+		height: 500px;
+	}
+	section:not(.home-hero):not(#coupons):not(#blog) .hero-text{
+		top: calc(50% + 30px);
+	}
+}
+
+@media only screen and (min-width: $nav_desktop){
+	
+}
+
 @import 'pages/company';
 @import 'pages/services';
+@import 'pages/menu';
+@import 'pages/blog';
+@import 'pages/single';
+@import 'pages/testimonials';

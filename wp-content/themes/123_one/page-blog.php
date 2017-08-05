@@ -17,17 +17,20 @@ get_header(); ?>
 		<?php 
 		global $wp_query;
 
-		$monthnum = $wp_query->query['monthnum'];
-		$year = $wp_query->query['year'];
 
 		$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-		$the_query = new WP_Query(array(
+		$args = array(
 			'post_type' => 'post',
 			'posts_per_page' => get_field('posts-per-page', 'option'),
 			'paged' => $paged,
-			'year' => $year,
-			'monthnum' => $monthnum,
-		));
+		);
+		if( isset($wp_query->query['monthnum']) ){
+			$args['monthnum'] = $wp_query->query['monthnum'];
+		}
+		if( isset($wp_query->query['year']) ){
+			$args['year'] = $wp_query->query['year'];
+		}
+		$the_query = new WP_Query($args);
 		if($the_query->have_posts()) : ?>
 		<div class="blog-blog-grid">
 			<?php while($the_query->have_posts()): $the_query->the_post();  ?>

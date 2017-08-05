@@ -1,0 +1,24 @@
+@media only screen {
+	.single-hero-header{
+		width: 100%;
+		text-align: center;
+	}
+	.single-single-date{
+		font-size: 1.4rem;
+	}
+	.single-single{
+		padding: 40px 20px;
+	}
+}
+
+@media only screen and (min-width: $medium){
+	.single-single-date{
+		font-size: 1.8rem;
+	}
+}
+
+@media only screen and (min-width: $large){
+	.single-hero-header{
+		top: calc(50% + 30px);
+	}
+}
