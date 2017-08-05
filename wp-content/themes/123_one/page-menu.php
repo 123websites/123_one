@@ -18,11 +18,11 @@
 						<?php if( !empty( get_sub_field('menu-category-description', 'option') ) ): ?>
 							<div class="menu-menu-grid-category-description"><?php echo get_sub_field('menu-category-description', 'option'); ?></div>
 						<?php endif;
-						if( get_sub_field('menu-category-type', 'option') == 'masonry' ):
+						if( get_field('menu-category-type', 'option') == 'masonry' ):
 							if( have_rows('menu-category-repeater', 'option') ): ?>
 							<div class="menu-menu-grid-category-grid">
 								<?php while( have_rows('menu-category-repeater', 'option') ): the_row(); ?>
-									<?php $has_image = get_sub_field('menu-item-picture-toggle', 'option') ?>
+									<?php $has_image = get_sub_field('menu-item-picture-toggle', 'option'); ?>
 									<div class="menu-menu-grid-category-grid-item<?php echo get_sub_field('menu-item-picture-toggle', 'option') ? ' hasimage' : '';?>">
 										<?php if($has_image): ?>
 											<div class="menu-menu-grid-category-grid-item-imagecontainer">
