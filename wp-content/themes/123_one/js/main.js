@@ -2,7 +2,7 @@
 
 	$(document).ready(function(){
 
-		
+		window._initContactMap();		
 
 	});
 

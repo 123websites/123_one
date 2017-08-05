@@ -1,0 +1,20 @@
+@media only screen {
+	.contact-contact-left-locations-location{
+		line-height: 1.5;
+	}
+}
+
+@media only screen and (min-width: $medium){
+
+}
+
+@media only screen and (min-width: $large){
+	.contact-contact-left{
+		padding-left: 0px;
+		padding-right: 10px;
+	}	
+	.contact-contact-right{
+		padding-right: 0px;
+		padding-left: 10px;
+	}
+}

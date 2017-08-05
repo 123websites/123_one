@@ -417,5 +417,16 @@
 @media only screen {
   .testimonials-testimonials-grid-item-quotemark {
     display: none; } }
+@media only screen {
+  .contact-contact-left-locations-location {
+    line-height: 1.5; } }
+@media only screen and (min-width: 1025px) {
+  .contact-contact-left {
+    padding-left: 0px;
+    padding-right: 10px; }
+
+  .contact-contact-right {
+    padding-right: 0px;
+    padding-left: 10px; } }
 
 /*# sourceMappingURL=build.css.map */
