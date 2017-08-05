@@ -27,7 +27,11 @@
 			<?php while(have_rows('company-employee-repeater', 'option')): the_row();?>
 				<div class="company-employees-grid-item">
 					<div class="company-employees-grid-item-imagecontainer">
-						<img src="<?php echo get_sub_field('company-employee-image', 'option'); ?>" class="company-employees-grid-item-imagecontainer-image">
+						<?php if( !empty(get_sub_field('company-employee-image', 'option')) ): ?>
+							<img src="<?php echo get_sub_field('company-employee-image', 'option'); ?>" class="company-employees-grid-item-imagecontainer-image">
+						<?php else: ?>
+							<img src="<?php the_field('featured-placeholder', 'option'); ?>" class="company-employees-grid-item-imagecontainer-image">
+						<?php endif; ?>
 					</div>
 					<?php 
 
