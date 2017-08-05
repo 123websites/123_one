@@ -25,7 +25,7 @@
 	<section class="company-employees section">
 		<div class="company-employees-grid">
 			<?php while(have_rows('company-employee-repeater', 'option')): the_row();?>
-				<div class="company-employees-grid-item">
+				<div class="company-employees-grid-item fade fade-up">
 					<div class="company-employees-grid-item-imagecontainer">
 						<?php if( !empty(get_sub_field('company-employee-image', 'option')) ): ?>
 							<img src="<?php echo get_sub_field('company-employee-image', 'option'); ?>" class="company-employees-grid-item-imagecontainer-image">

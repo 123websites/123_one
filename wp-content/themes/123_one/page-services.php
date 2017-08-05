@@ -11,7 +11,7 @@
 		<?php if(have_rows('services-repeater', 'option')) : ?>
 		<div class="services-services-grid">
 			<?php while(have_rows('services-repeater', 'option')): the_row();  ?>
-			<div class="services-services-grid-item">
+			<div class="services-services-grid-item fade fade-up">
 				<h3 class="services-services-grid-item-header"><?php echo get_sub_field('service-name', 'option'); ?></h3>
 				<div class="services-services-grid-item-wrapper">
 					<div class="services-services-grid-item-imagecontainer">
