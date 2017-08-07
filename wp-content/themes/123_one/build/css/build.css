@@ -116,7 +116,8 @@
 
   .section-header {
     font-size: 3.6rem;
-    font-family: "Gotham", "Helvetica", sans-serif; } }
+    font-family: "Gotham", "Helvetica", sans-serif;
+    font-weight: bold; } }
 @media only screen and (min-width: 641px) {
   section:not(.home-hero):not(#coupons):not(#blog).hero {
     height: 400px; } }
