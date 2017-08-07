@@ -12,13 +12,13 @@
 		<?php if(have_rows('general-home-slider', 'option') && count($rows) >= 3): ?>
 		<div class="home-hero-slides">
 			<?php while(have_rows('general-home-slider', 'option')): the_row(); ?>
-				<img src="<?php echo get_sub_field('general-home-slider-image'); ?>" class="home-hero-slides-slide">
+				<div style="background-image: url('<?php echo get_sub_field('general-home-slider-image'); ?>');" class="home-hero-slides-slide">
 			<?php endwhile; ?>
 		<?php else: ?>
-			<img src="<?php echo get_template_directory_uri(); ?>/library/img/home/slides/slide01.jpg" class="home-hero-slides-slide">
-			<img src="<?php echo get_template_directory_uri(); ?>/library/img/home/slides/slide02.jpg" class="home-hero-slides-slide">
-			<img src="<?php echo get_template_directory_uri(); ?>/library/img/home/slides/slide03.jpg" class="home-hero-slides-slide">
-			<img src="<?php echo get_template_directory_uri(); ?>/library/img/home/slides/slide04.jpg" class="home-hero-slides-slide">
+			<div style="background-image: url('<?php echo get_template_directory_uri(); ?>/library/img/home/slides/slide01.jpg');" class="home-hero-slides-slide"></div>
+			<div style="background-image: url('<?php echo get_template_directory_uri(); ?>/library/img/home/slides/slide02.jpg');" class="home-hero-slides-slide"></div>
+			<div style="background-image: url('<?php echo get_template_directory_uri(); ?>/library/img/home/slides/slide03.jpg');" class="home-hero-slides-slide"></div>
+			<div style="background-image: url('<?php echo get_template_directory_uri(); ?>/library/img/home/slides/slide04.jpg');" class="home-hero-slides-slide"></div>
 		</div>
 		<?php endif; ?>
 		<div class="home-hero-tint hero-tint"></div>
