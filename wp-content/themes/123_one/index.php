@@ -12,7 +12,7 @@
 		<?php if(have_rows('general-home-slider', 'option') && count($rows) >= 3): ?>
 		<div class="home-hero-slides">
 			<?php while(have_rows('general-home-slider', 'option')): the_row(); ?>
-				<div style="background-image: url('<?php echo get_sub_field('general-home-slider-image'); ?>');" class="home-hero-slides-slide">
+				<div style="background-image: url('<?php echo get_sub_field('general-home-slider-image'); ?>');" class="home-hero-slides-slide"></div>
 			<?php endwhile; ?>
 		<?php else: ?>
 			<div style="background-image: url('<?php echo get_template_directory_uri(); ?>/library/img/home/slides/slide01.jpg');" class="home-hero-slides-slide"></div>
