@@ -112,7 +112,11 @@
     top: calc(50% + 10px); }
 
   section:not(.home-hero):not(#coupons):not(#blog) .hero-text-header {
-    color: white; } }
+    color: white; }
+
+  .section-header {
+    font-size: 3.6rem;
+    font-family: "Gotham", "Helvetica", sans-serif; } }
 @media only screen and (min-width: 641px) {
   section:not(.home-hero):not(#coupons):not(#blog).hero {
     height: 400px; } }
@@ -121,7 +125,10 @@
     height: 500px; }
 
   section:not(.home-hero):not(#coupons):not(#blog) .hero-text {
-    top: calc(50% + 30px); } }
+    top: calc(50% + 30px); }
+
+  .section-header {
+    font-size: 4.4rem; } }
 @media only screen {
   .company-employees-grid-item {
     max-width: 320px;
