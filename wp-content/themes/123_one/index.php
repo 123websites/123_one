@@ -4,9 +4,7 @@
 	<section class="home-hero hero">
 		<div class="home-hero-text hero-text">
 			<h1 class="home-hero-text-header hero-text-header"><?php echo get_field('home-hero-header-text', 'option'); ?></h1>
-			<?php if(is_active_page('contact')): ?>
-			<a href="<?php echo site_url(); ?>/contact" class="home-hero-text-button">contact</a>	
-			<?php endif; ?>
+			<a href="<?php echo site_url(); ?>/company" class="home-hero-text-button">learn more</a>	
 		</div>
 		<?php $rows = get_field('general-home-slider', 'option'); ?>
 		<?php if(have_rows('general-home-slider', 'option') && count($rows) >= 3): ?>
