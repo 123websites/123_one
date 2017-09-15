@@ -46,4 +46,19 @@
 
 		echo $render_string;
 	}
+
+	add_action( 'wp_head', 'custom_color_css' );
+
+	function custom_color_css(){
+		if( get_field('buttons-underlines-toggle', 'option') ):
+			$color = get_field('buttons-underlines', 'option');
+		?>
+			<style type="text/css">
+				.services-services-grid-item-header{
+					background-color: <?php echo $color; ?>;
+				}
+			</style>
+		<?php
+		endif;
+	}
 ?>
