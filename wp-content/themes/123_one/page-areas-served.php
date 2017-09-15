@@ -24,7 +24,13 @@
 						$classes .= 'large-' . (string) $large_remainder . ' ';
 					}
 					?>
-					<?php $contents = simplexml_load_file('http://maps.googleapis.com/maps/api/geocode/xml?address='.$row['zip'].'@&sensor=true'); ?>
+					<?php 
+						$ch = curl_init();
+						curl_setopt($ch, CURLOPT_URL, 'http://maps.googleapis.com/maps/api/geocode/xml?address=' . $row['zip'] . '@&sensor=true');
+						curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+						$curl_return = curl_exec($ch);
+						$contents = simplexml_load_string($curl_return);
+					?>
 					<a href="https://www.google.com/maps/@<?php echo $contents->result->geometry->location->lat . ',' . $contents->result->geometry->location->lng . ',14z'; ?>" class="areas-served-areas-grid-imagecontainer<?php echo !empty($classes) ? ' ' . $classes : '';  ?>" target="_blank">
 						<div class="areas-served-areas-grid-imagecontainer-citystate"><?php 
 							preg_match_all('/^.*?(?=(\d))/', $contents->result->formatted_address, $preg_match_all_matches);
