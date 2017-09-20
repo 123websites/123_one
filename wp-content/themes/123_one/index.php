@@ -88,7 +88,7 @@
 		<div class="home-areasserved-map">
 			<a href="<?php echo site_url(); ?>/areas-served" class="home-areasserved-map-learnmore" href="<?php echo get_template_directory_uri() ?>/areasserved">learn more</a>
 			<div class="home-areasserved-map-tint"></div>
-			<div class="home-areasserved-map-gmap" id="map"></div>
+			<div class="home-areasserved-map-gmap areas-served-hero-map" id="map"></div>
 		</div>
 	</section>
 </main>

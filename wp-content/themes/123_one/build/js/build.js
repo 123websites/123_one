@@ -7,7 +7,7 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
 
 	$(document).ready(function(){
 
-		window._initContactMap();		
+		// window._initContactMap();		
 
 	});
 
