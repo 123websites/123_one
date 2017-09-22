@@ -56,7 +56,6 @@ get_header(); ?>
 			wp_reset_postdata();
 
 			$wp_query = $original_global;
-
 			?>
 		</div>
 		
