@@ -43,7 +43,6 @@
 				if( have_rows('states', 'option') ):
 					$rows = get_field('states', 'option');
 					foreach($rows as $index => $row): 
-						
 					?>
 						<a href="<?php echo 'https://www.google.com/maps/search/' . rawurlencode($row['state']['label']) . '?hl=en&source=opensearch' ?>" class="fade fade-up areas-served-areas-grid-imagecontainer" target="_blank">
 							<div style="background-image: url('<?php echo $row['image']; ?>');" class="areas-served-areas-grid-imagecontainer-image"></div>
