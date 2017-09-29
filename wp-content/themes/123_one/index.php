@@ -4,7 +4,9 @@
 	<section class="home-hero hero">
 		<div class="home-hero-text hero-text">
 			<h1 class="home-hero-text-header hero-text-header"><?php echo get_field('home-hero-header-text', 'option'); ?></h1>
-			<a href="<?php echo site_url(); ?>/company" class="home-hero-text-button">learn more</a>	
+			<?php if( !get_field('disable-slider-button', 'option') ): ?>
+				<a href="<?php echo site_url(); ?>/company" class="home-hero-text-button"><?php echo !empty(get_field('slider-button-text', 'option')) ? get_field('slider-button-text', 'option') : 'Learn More'; ?></a>	
+			<?php endif; ?>
 		</div>
 		<?php $rows = get_field('general-home-slider', 'option'); ?>
 		<?php if(have_rows('general-home-slider', 'option') && count($rows) >= 3): ?>
