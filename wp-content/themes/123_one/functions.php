@@ -24,7 +24,6 @@
 	    }
 	    
 	    // change Posts menu position in the backend
-
 	    $newkey = 83; // use whatever index gets you the position you want
 	    // if this key is in use you will write over a menu item!
 	    $menu[$newkey]=$menu[$oldkey];
