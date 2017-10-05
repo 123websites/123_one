@@ -3,7 +3,7 @@
 <main class="gallery">
 	<section class="gallery-hero hero" style="background-image: url('<?php echo get_field('gallery-bg', 'option'); ?>');">
 		<div class="gallery-hero-text hero-text">
-			<h1 class="gallery-hero-text-header hero-text-header">Gallery</h1>
+			<h1 class="gallery-hero-text-header hero-text-header"><?php echo !empty(get_field('gallery-slogan', 'option')) ? get_field('gallery-slogan', 'option') : 'Gallery' ?></h1>
 		</div>
 		<div class="gallery-hero-tint hero-tint"></div>
 	</section>

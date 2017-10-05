@@ -3,7 +3,7 @@
 <main class="areas-served">
 	<section class="areas-served-hero hero"">
 		<div class="areas-served-hero-text hero-text">
-			<h1 class="areas-served-hero-text-header hero-text-header">areas served</h1>
+			<h1 class="areas-served-hero-text-header hero-text-header"><?php echo !empty(get_field('areas-served-slogan', 'option')) ? get_field('areas-served-slogan', 'option') : 'Areas Served' ?></h1>
 		</div>
 		<div class="areas-served-hero-tint hero-tint"></div>
 		<div class="areas-served-hero-map" id="map"></div>
