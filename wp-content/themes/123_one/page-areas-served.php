@@ -24,12 +24,12 @@
 						$city_name = $contents->xpath('/GeocodeResponse/result/address_component[type = "locality"]/long_name/text()')[0]->__toString();
 						$state_name = $contents->xpath('/GeocodeResponse/result/address_component[type = "administrative_area_level_1"]/short_name/text()')[0]->__toString();
 					?>
-						<a href="https://www.google.com/maps/@<?php echo $contents->result->geometry->location->lat . ',' . $contents->result->geometry->location->lng . ',14z'; ?>" class="fade fade-up areas-served-areas-grid-imagecontainer" target="_blank">
+						<div class="fade fade-up areas-served-areas-grid-imagecontainer" target="_blank">
 							<div style="background-image: url('<?php echo $row['area-image']; ?>');" class="areas-served-areas-grid-imagecontainer-image"></div>
 							<div class="areas-served-areas-grid-imagecontainer-citystate"><?php 
 								echo $city_name . ', ' . $state_name;
 							?></div>
-						</a>
+						</div>
 				<?php 
 					endforeach;
 				endif;
@@ -39,10 +39,10 @@
 					$rows = get_field('states', 'option');
 					foreach($rows as $index => $row): 
 					?>
-						<a href="<?php echo 'https://www.google.com/maps/search/' . rawurlencode($row['state']['label']) . '?hl=en&source=opensearch' ?>" class="fade fade-up areas-served-areas-grid-imagecontainer" target="_blank">
+						<div class="fade fade-up areas-served-areas-grid-imagecontainer" target="_blank">
 							<div style="background-image: url('<?php echo $row['image']; ?>');" class="areas-served-areas-grid-imagecontainer-image"></div>
 							<div class="areas-served-areas-grid-imagecontainer-citystate"><?php echo $row['state']['label'] ?></div>
-						</a>
+						</div>
 				<?php 
 					endforeach;	
 				endif;
@@ -53,10 +53,10 @@
 					foreach($rows as $index => $row): 
 						
 					?>
-						<a href="<?php echo 'https://www.google.com/maps/search/' . rawurlencode($row['country']['label']) . '?hl=en&source=opensearch' ?>" class="fade fade-up areas-served-areas-grid-imagecontainer" target="_blank">
+						<div class="fade fade-up areas-served-areas-grid-imagecontainer" target="_blank">
 							<div style="background-image: url('<?php echo $row['country_image']; ?>');" class="areas-served-areas-grid-imagecontainer-image"></div>
 							<div class="areas-served-areas-grid-imagecontainer-citystate"><?php echo $row['country']['label'] ?></div>
-						</a>
+						</div>
 				<?php 
 					endforeach;	
 				endif;
