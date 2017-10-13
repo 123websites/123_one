@@ -25,7 +25,7 @@
 	</section>
 	<?php if(get_field('services-toggle', 'option')): ?>
 	<section class="services-services">
-		<h2 class="home-services-header section-header">Services</h2>
+		<h2 class="home-services-header section-header"><?php echo get_field('services-alt-toggle', 'option') ? get_field('services-alt', 'option') : 'services' ?></h2>
 		<?php if(have_rows('services-repeater', 'option')) : ?>
 		<div class="services-services-grid">
 			<?php while(have_rows('services-repeater', 'option')): the_row();  ?>
@@ -53,7 +53,7 @@
 	<?php endif; ?>
 	<?php if(have_rows('testimonials-repeater', 'option') && get_field('testimonials-toggle', 'option')): ?>
 	<section class="<?php echo get_field('services-toggle', 'option') == false ? 'unfancytestimonials' : ''; ?> home-testimonials section">
-		<h2 class="home-testimonials-header section-header">Testimonials</h2>
+		<h2 class="home-testimonials-header section-header"><?php echo get_field('testimonials-alt-toggle', 'option') ? get_field('testimonials-alt', 'option') : 'testimonials' ?></h2>
 		<?php if(have_rows('testimonials-repeater', 'option')): ?>
 		<div class="home-testimonials-grid">
 			<?php while(have_rows('testimonials-repeater', 'option')): the_row(); 
@@ -86,7 +86,7 @@
 	</section>
 	<?php endif; ?>
 	<section class="home-areasserved section">
-		<h2 class="home-areasserved-header section-header">Areas Served</h2>
+		<h2 class="home-areasserved-header section-header"><?php echo get_field('areas-served-alt-toggle', 'option') ? get_field('areas-served-alt', 'option') : 'areas-served' ?></h2>
 		<div class="home-areasserved-map">
 			<a href="<?php echo site_url(); ?>/areas-served" class="home-areasserved-map-learnmore" href="<?php echo get_template_directory_uri() ?>/areasserved">learn more</a>
 			<div class="home-areasserved-map-tint"></div>
