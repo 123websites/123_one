@@ -3,7 +3,7 @@
 <main class="contact">
 	<section class="contact-hero hero">
 		<div class="contact-hero-text hero-text">
-			<h1 class="contact-hero-text-header hero-text-header">contact</h1>
+			<h1 class="contact-hero-text-header hero-text-header"><?php echo get_field('contact-alt-toggle', 'option') ? get_field('contact-alt', 'option') : 'contact' ?></h1>
 		</div>
 		<div class="contact-hero-tint hero-tint"></div>
 		<div class="contact-hero-map"></div>

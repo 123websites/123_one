@@ -3,7 +3,7 @@
 <main class="services">
 	<section class="services-hero hero" style="background-image: url('<?php echo get_field('services-bg', 'option'); ?>');">
 		<div class="services-hero-text hero-text">
-			<h1 class="services-hero-text-header hero-text-header">services</h1>
+			<h1 class="services-hero-text-header hero-text-header"><?php echo get_field('services-alt-toggle', 'option') ? get_field('services-alt', 'option') : 'services' ?></h1>
 		</div>
 		<div class="services-hero-tint hero-tint"></div>
 	</section>

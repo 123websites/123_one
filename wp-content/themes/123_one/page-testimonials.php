@@ -3,7 +3,7 @@
 <main class="testimonials">
 	<section class="testimonials-hero hero" style="background-image: url('<?php echo get_field('testimonials-bg', 'option'); ?>');">
 		<div class="testimonials-hero-text hero-text">
-			<h1 class="testimonials-hero-text-header hero-text-header">Testimonials</h1>
+			<h1 class="testimonials-hero-text-header hero-text-header"><?php echo get_field('testimonials-alt-toggle', 'option') ? get_field('testimonials-alt', 'option') : 'testimonials' ?></h1>
 		</div>
 		<div class="testimonials-hero-tint hero-tint"></div>
 	</section>

@@ -3,7 +3,7 @@
 <main class="menu">
 	<section class="menu-hero hero" style="background-image: url('<?php echo get_field('menu-bg', 'option'); ?>');">
 		<div class="menu-hero-text hero-text">
-			<h1 class="menu-hero-text-header hero-text-header">menu</h1>
+			<h1 class="menu-hero-text-header hero-text-header"><?php echo get_field('menu-alt-toggle', 'option') ? get_field('menu-alt', 'option') : 'menu' ?></h1>
 		</div>
 		<div class="menu-hero-tint hero-tint"></div>
 	</section>
