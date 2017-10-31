@@ -86,7 +86,7 @@
 	</section>
 	<?php endif; ?>
 	<section class="home-areasserved section">
-		<h2 class="home-areasserved-header section-header"><?php echo get_field('areas-served-alt-toggle', 'option') ? get_field('areas-served-alt', 'option') : 'areas-served' ?></h2>
+		<h2 class="home-areasserved-header section-header"><?php echo get_field('areas-served-alt-toggle', 'option') ? get_field('areas-served-alt', 'option') : 'Areas Served' ?></h2>
 		<div class="home-areasserved-map">
 			<a href="<?php echo site_url(); ?>/areas-served" class="home-areasserved-map-learnmore" href="<?php echo get_template_directory_uri() ?>/areasserved">learn more</a>
 			<div class="home-areasserved-map-tint"></div>
